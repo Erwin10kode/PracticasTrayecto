@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practicas con alertas</title>
+</head>
+<body>
+<h2>Alertas con Html y Javascript</h2>
+
+<input type="button" value="Mensaje" onclick="mensaje()">
+<hr>
+<p>Alerta al presionar un checkbox</p>
+<input type="checbox" name="presion" onclick="presion()">
+<hr>
+<p>Escribir con Javascript</p>
+<input type="button" value="Escribe el mensaje" onclick="document.write(¨lindo att alc.erwin martinez¨);">
+<hr>
+<p>Vinculos con alertas</p>
+<a href="javascript:alert("Hola alucin bellako");">darle click</a>
+<hr>
+<a href="javascript:window.print();">IMPRIMIR PANTALLA</a>
+<hr>
+<p>alerta con opciones aceptar y cancelar</p>
+<a href="#" onclick="salir()">salir de la practica</a>
+
+<!-- funcion boton -->
+<script>
+function mensaje(){
+alert("Hola Alucin bellako");
+}
+</script>
+<!-- funcion checkbox -->
+<script>
+function presion(){
+alert("Te vez muy guapo alucin");
+}
+</script>
+<!-- funcion escribir -->
+<!-- texto
+<script>
+function escribir(){
+document.write("es facil trabajar con el write con javascript att. alc erwin martinez");
+}
+</script>
+-->
+<script>
+function salir(){
+var salir=confirm("¿Deseas salir de la practica?")
+if (salir) {
+alert("Gracias estas saliendo de la pagina, nos vemos Alucin")
+window.location ="https://th.bing.com/th/id/OIP.7Z0GQ6Lgw2NykNqhsSB9tQHaEo?pid=ImgDet&rs=1";
+}
+else{
+alert("Gracias sigues con nosotros Alucin")
+}
+}
+</script>
+</body>
+</html>

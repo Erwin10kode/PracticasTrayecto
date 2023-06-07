@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Instalacion de archivos css de bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Practica con Bootstrap</title>
+</head>
+<body>
+    <div class="row mt-4 justify-content-center">
+        <h2 class="text-center text-success">Validar campo</h2>
+    </div>
+    <div class="row mt-4 justify-content-center">
+        <form action="" method="post">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8 ">
+                    <input type="text" name="" id="letra" placeholder="Digita una letra" class="form-control">
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <input type="submit" value="Validar" class="btn btn-sm btn btn-outline-info" onclick="Validando();">
+                </div>
+            </div>
+        </form>
+        <script>
+            function Validando(){
+                texto = document.getElementById("letra").value;
+                if(texto == ""){
+                    alert("Por favor digita texto no puede estar vacio");
+                }
+                else{
+                    if(!isNaN(texto)){
+                        alert("Necesitamos digites una letra tu digitaste un texto");
+                    }
+                    else{
+                        alert("la texto que indicaste es "+ texto);
+                        return false;
+                    }
+                }
+            }
+        </script>
+    </div>
+    <div class="row mt-4 justify-content-center">
+        3
+    </div>
+    <!--Instale el javascript de bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
